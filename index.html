@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="form">
+      <form id="form">
+        <img class="logo" src="kennect-logo.png" />
+        <div class="input-box">
+          <i class="fa fa-user"></i>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Username"
+          />
+          <small>Error message</small>
+        </div>
+        <div class="input-box">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+          />
+          <span class="eye" onclick="myFunction()">
+            <i id="hide1" class="fa fa-eye"></i>
+            <i id="hide2" class="fa fa-eye-slash"></i>
+          </span>
+          <small>Error message</small>
+        </div>
+        <div>
+          <input type="submit" name="Log-in" value="LOGIN" />
+          <input type="button" name="SSO" value="SSO" />
+        </div>
+        <a class="fpwd" href="#">FORGOT PASSWORD</a>
+        <a class="otp" href="#">HAVE AN OTP?</a>
+        <a class="help" href="#">HELP</a>
+      </form>
+    </div>
+  </body>
+</html>
